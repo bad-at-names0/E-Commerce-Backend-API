@@ -28,7 +28,7 @@ router
   .patch(authMiddleware, authorizeRole("admin"), updateProduct)
   .delete(authMiddleware, authorizeRole("admin"), deleteProduct);
 
-// FOR ALL REVIEW RELATED
+// FOR ALL THE REVIEW RELATED
 router.route("/review").get(getAllReviews);
 router.route("/review").put(authMiddleware, createProductReview);
 router.route("/review").patch(authMiddleware, updateOneReview);
