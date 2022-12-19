@@ -24,7 +24,7 @@ class APIFeatures {
     const toRemoveFields = ["page", "limit", "keyword"];
     toRemoveFields.forEach((key) => delete copyQueryStr[key]);
 
-    //First convert the json to string to edit it
+    //First convert the json to string to edit it .
     let strFormatQueryStr = JSON.stringify(copyQueryStr);
     strFormatQueryStr = strFormatQueryStr.replace(
       /\b(lt|lte|gt|ge)\b/g,
